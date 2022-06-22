@@ -8,15 +8,15 @@ const endResult = document.querySelector("#end"); // Final result
 const reset = endResult.querySelector("button"); // Reset button
 reset.addEventListener("click", restart);
 
-const total = document.querySelectorAll(".choice-grid div"); // Total number of images
+const total = document.querySelectorAll(".choice-grid div");
 listeners();
 
-function listeners() { // Adds listeners to all the images
+function listeners() {
     for (const ans of total)
         ans.addEventListener("click", select)
 }
 
-function removeLis() { // Removes listeners from all the images
+function removeLis() {
     for (const ans of total)
         ans.removeEventListener("click", select)
 }
